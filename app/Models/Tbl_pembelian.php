@@ -16,8 +16,9 @@ class Tbl_pembelian extends Model
 
     ];
 
-    public function galleries()
+    public function tbl_pembelian()
     {
-        return $this->hasMany(ProductGallery::class, 'product_id', 'id');
+        return $this->hasMany(Tbl_pembelian::class, 'id', 'id');
+
     }
 }

@@ -21,6 +21,6 @@ class Tbl_barang extends Model
 
     public function galleries()
     {
-        return $this->hasMany(ProductGallery::class, 'product_id', 'id');
+        return $this->hasMany(Tbl_barang::class, 'kode_barang', 'id');
     }
 }
